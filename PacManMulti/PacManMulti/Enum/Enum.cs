@@ -10,7 +10,7 @@ using System.Text;
 /// </summary>
 namespace PacManMulti.Enum
 {
-    public enum Players { Human, AI };
-    public enum Controllers { Keyboard, Xbox, GhostAI, PacAI };
-    public enum Mode { Classic, GhostTag, Battle };
+    public enum PlayerTypes { Human, AI };
+    public enum ControllerTypes { Keyboard, Xbox, GhostAI, PacAI };
+    public enum ModeTypes { Classic, GhostTag, Battle };
 }

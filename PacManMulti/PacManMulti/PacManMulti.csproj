@@ -90,7 +90,9 @@
     <Compile Include="Rules\ClassRules.cs" />
     <Compile Include="Rules\Rules.cs" />
     <Compile Include="Rules\TagRules.cs" />
+    <Compile Include="UI\BoardUI.cs" />
     <Compile Include="UI\Menu.cs" />
+    <Compile Include="UI\View.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

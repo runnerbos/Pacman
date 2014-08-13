@@ -15,11 +15,11 @@ namespace PacManMulti.Logic
         public event PropertyChangedEventHandler PropertyChanged;
 
         //This enum will identfy the type of element this element is
-        public ElementType et;
+        public ElementType et { get; set; }
         //This will determine at what point the rectangle will be centered
         private Point _p;
         //This int is the number of points the element will move every time it recives a move directive
-        public int squaresPermove;
+        public int squaresPermove { get; set; }
 
         //This will allow the object to notify anyone subscribed to it when it moves
         public Point P
@@ -44,22 +44,22 @@ namespace PacManMulti.Logic
             Point tempPoint = this.P;
             if (d == Direction.Left)
             {
-                tempPoint.X -= 1;
+                tempPoint.X -= squaresPermove;
                 this.P = tempPoint;
             }
             if (d == Direction.Right)
             {
-                tempPoint.X += 1;
+                tempPoint.X += squaresPermove;
                 this.P = tempPoint;
             }
             if (d == Direction.Up)
             {
-                tempPoint.Y += 1;
+                tempPoint.Y += squaresPermove;
                 this.P = tempPoint;
             }
             if (d == Direction.Down)
             {
-                tempPoint.Y -= 1;
+                tempPoint.Y -= squaresPermove;
                 this.P = tempPoint;
             }
         }

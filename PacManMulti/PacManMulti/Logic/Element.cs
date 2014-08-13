@@ -14,6 +14,22 @@ namespace PacManMulti.Logic
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        //This bool keeps track of whether or not this element is under the influence of a powerup
+        private bool _ip;
+
+        //This method will notify those who chare about a change in the powerup state
+        public bool isPowered
+        {
+            get { return _ip; }
+            set{
+                _ip = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged(this, new PropertyChangedEventArgs("Powered"));
+                }
+            }
+        }
+        
         //This enum will identfy the type of element this element is
         public ElementType et { get; set; }
         //This will determine at what point the rectangle will be centered
@@ -29,7 +45,7 @@ namespace PacManMulti.Logic
             {
                 _p = value;
                 if (PropertyChanged != null)
-                    PropertyChanged(this, new PropertyChangedEventArgs("Alive"));
+                    PropertyChanged(this, new PropertyChangedEventArgs("Moved"));
             }
         }
 

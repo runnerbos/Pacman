@@ -11,7 +11,8 @@ namespace PacManMulti
 {
     public class GameMaster
     {
-        private Element[] elements;
+        private Element[] PlayerElements;
+        private List<Element> elements = new List<Element>();
         private RulesI rules;
         private Board board;
 
@@ -22,11 +23,11 @@ namespace PacManMulti
             if (game.players.Length < 1 || game.players.Length > 4)
                 throw new Exception("An invalid game was passed to the GameMaster.\nThe number of players is invalid.");
 
-            elements = new Element[game.players.Length];
+            PlayerElements = new Element[game.players.Length];
 
-            for (int i = 0; i < elements.Length; i++)
+            for (int i = 0; i < PlayerElements.Length; i++)
             {
-                elements[i] = new Element(game.players[i], game.controls[i], game.schemes[i]);
+                PlayerElements[i] = new Element(game.players[i], game.controls[i], game.schemes[i]);
             }
 
             switch (game.mode)
@@ -41,7 +42,10 @@ namespace PacManMulti
                     rules = new TagRules();
                     break;
             }
-            board = new Board(elements, rules);
+          //  elements.AddRange(rules.GetElements());
+            elements.AddRange(PlayerElements);
+            
+            board = new Board(elements.ToArray(), rules);
         }
         public static void Main()
         {

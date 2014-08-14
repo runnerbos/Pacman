@@ -6,6 +6,7 @@ using PacManMulti.UI;
 using PacManMulti.Enum;
 using PacManMulti.Rules;
 using PacManMulti.Controllers;
+using PacManMulti.Elements;
 
 namespace PacManMulti
 {
@@ -23,12 +24,7 @@ namespace PacManMulti
             if (game.players.Length < 1 || game.players.Length > 4)
                 throw new Exception("An invalid game was passed to the GameMaster.\nThe number of players is invalid.");
 
-            PlayerElements = new Element[game.players.Length];
-
-            for (int i = 0; i < PlayerElements.Length; i++)
-            {
-                PlayerElements[i] = new Element(game.players[i], game.controls[i], game.schemes[i]);
-            }
+            //Some logic for creating players.
 
             switch (game.mode)
             {

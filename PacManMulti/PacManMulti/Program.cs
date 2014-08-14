@@ -2,6 +2,7 @@ using System;
 
 namespace PacManMulti
 {
+    /*
 #if WINDOWS || XBOX
     static class Program
     {
@@ -17,5 +18,6 @@ namespace PacManMulti
         }
     }
 #endif
+    */
 }
 

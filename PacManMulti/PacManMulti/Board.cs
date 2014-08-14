@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using PacManMulti.Rules;
+using PacManMulti.Elements;
 
 namespace PacManMulti
 {

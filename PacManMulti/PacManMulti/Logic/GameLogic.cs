@@ -7,9 +7,9 @@ namespace PacManMulti.Logic
 {
     class GameLogic
     {
-        public void GameLogic(Rules m, int GhostHuman, int GhostAI, int PackPlayerHuman, int PackPlayerAI, Board b, BoardLayout bl)
-        {
+        //public void GameLogic(Rules m, int GhostHuman, int GhostAI, int PackPlayerHuman, int PackPlayerAI, Board b, BoardLayout bl)
+        //{
 
-        }
+        //}
     }
 }

@@ -98,6 +98,8 @@
     <Compile Include="Rules\TagRules.cs" />
     <Compile Include="UI\BoardUI.cs" />
     <Compile Include="UI\Menu.cs" />
+    <Compile Include="UI\Sprite.cs" />
+    <Compile Include="UI\SpriteDemo.cs" />
     <Compile Include="UI\View.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -105,12 +107,6 @@
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PacManMultiContent\PacManMultiContent.contentproj">
-      <Name>PacManMultiContent</Name>
-      <XnaReferenceType>Content</XnaReferenceType>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
@@ -133,6 +129,13 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Content\Content.contentproj">
+      <Project>{525171B9-68A9-4EC3-9D4B-F250A8A86FAA}</Project>
+      <Name>Content</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

@@ -10,7 +10,7 @@ namespace PacManMulti.Logic
     /// <summary>
     /// This class is the abstract version  of all elements that will exist in the board
     /// </summary>
-    abstract class Element : INotifyPropertyChanged
+    public abstract class Element : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

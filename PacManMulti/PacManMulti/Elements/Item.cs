@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PacManMulti.Enum;
+using PacManMulti.Logic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

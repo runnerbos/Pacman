@@ -7,6 +7,7 @@ using PacManMulti.Enum;
 using PacManMulti.Rules;
 using PacManMulti.Controllers;
 using PacManMulti.Elements;
+using PacManMulti.Logic;
 
 namespace PacManMulti
 {

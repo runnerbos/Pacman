@@ -79,7 +79,6 @@
     <Compile Include="Controllers\KeyboardController.cs" />
     <Compile Include="Controllers\PacplayerAIController.cs" />
     <Compile Include="Controllers\XboxController.cs" />
-    <Compile Include="Elements\Element.cs" />
     <Compile Include="Elements\Fruits\Apple.cs" />
     <Compile Include="Elements\Fruits\Bell.cs" />
     <Compile Include="Elements\Fruits\Cherry.cs" />

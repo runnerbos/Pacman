@@ -13,4 +13,11 @@ namespace PacManMulti.Enum
     public enum PlayerTypes { Human, AI };
     public enum ControllerTypes { Keyboard, Xbox, GhostAI, PacAI };
     public enum ModeTypes { Classic, GhostTag, Battle };
+    public enum EffectsEnum
+    {
+        SpeedUp,
+        SlowDown,
+        GhostsEdible,
+        PlayersEdible
+    }
 }

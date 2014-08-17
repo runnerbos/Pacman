@@ -33,7 +33,7 @@ namespace PacManMulti
                     rules = new BattleRules();
                     break;
                 case ModeTypes.Classic:
-                    rules = new ClassRules();
+                    rules = new ClassicRules();
                     break;
                 case ModeTypes.GhostTag:
                     rules = new TagRules();

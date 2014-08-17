@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PacManMulti.Rules
 {
-    public class BattleRules : RulesI
+    public class BattleRules : Rules
     {
     }
 }

@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using PacManMulti.Enum;
+using PacManMulti.Logic;
 
-namespace PacManMulti.Logic
+namespace PacManMulti.Elements
 {
     /// <summary>
     /// This class is the abstract version  of all elements that will exist in the board

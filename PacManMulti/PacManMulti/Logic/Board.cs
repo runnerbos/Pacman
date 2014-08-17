@@ -8,8 +8,10 @@ using System.Text;
 
 namespace PacManMulti.Logic
 {
-    abstract class Board 
+    public class Board 
     {
+        public int Width { get; set; }
+        public int Height { get; set; }
         public ObservableCollection<Element> board = new ObservableCollection<Element>();
     }    
 }

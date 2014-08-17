@@ -13,7 +13,7 @@ namespace PacManMulti.UI
 
         List<Sprite> Sprites = new List<Sprite>();
 
-        public BoardUI()
+        public BoardUI(Logic.Board board)
         {
             Sprites.Add(new SpriteDemo());
         }

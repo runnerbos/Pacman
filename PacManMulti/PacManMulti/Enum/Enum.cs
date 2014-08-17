@@ -20,4 +20,9 @@ namespace PacManMulti.Enum
         GhostsEdible,
         PlayersEdible
     }
+
+    public enum ElementType
+    {
+        Ghost, PacPlayer, Wall, PacDot, Fruit, Powerup
+    }
 }
